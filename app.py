@@ -1,6 +1,7 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_socketio import SocketIO, send
 import sqlite3
+import os
 from test import get_response
 
 app = Flask(__name__)
@@ -368,5 +369,10 @@ def handle_message(msg):
     send(f'{get_response(msg)}', broadcast=True)
     # send(f' You said: {msg}', broadcast=True)
 
+#if __name__ == '__main__':
+    #socketio.run(app, debug=True, allow_unsafe_werkzeug=True)
+
 if __name__ == '__main__':
-    socketio.run(app, debug=True, allow_unsafe_werkzeug=True)
+    port = int(os.environ.get("PORT", 5000))  # Default to 5000 if PORT is not set
+    socketio.run(app, host="0.0.0.0", port=port, debug=True, allow_unsafe_werkzeug=True)
+
