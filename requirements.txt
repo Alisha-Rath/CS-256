@@ -207,7 +207,6 @@ python-engineio==4.9.1
 python-socketio==5.11.4
 pytube==15.0.0
 pytz==2023.3.post1
-pywin32==306
 PyYAML==6.0.1
 pyzmq==25.1.1
 ratelimiter==1.2.0.post0
@@ -245,7 +244,6 @@ tensorboard==2.12.3
 tensorboard-data-server==0.7.2
 tensorflow==2.15.0
 tensorflow-estimator==2.12.0
-tensorflow-intel==2.12.1
 tensorflow-io-gcs-filesystem==0.31.0
 tensorflow-metadata==1.14.0
 termcolor==2.3.0
@@ -254,9 +252,9 @@ threadpoolctl==3.2.0
 tiktoken==0.5.2
 tokenizers==0.15.2
 toml==0.10.2
-torch==2.0.1+cu118
-torchaudio==2.0.2+cu118
-torchvision==0.15.2+cu118
+torch==2.0.1
+torchaudio==2.0.2
+torchvision==0.15.2
 tornado==6.3.3
 tqdm==4.66.1
 traitlets==5.9.0
