@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Alisha Rath</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+  <style>
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f0f4f7; /* Light background */
+    }
+    .navbar {
+      background-color: #0D47A1;
+    }
+    .navbar-nav .nav-link {
+      color: white;
+      font-weight: bold;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #1565C0;
+    }
+    .main-content {
+      padding: 40px;
+      background: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around content */
+      border-radius: 8px;
+      margin-top: 20px;
+    }
+    h1 {
+      font-size: 3rem; /* Increased size for main headings */
+      font-weight: bold;
+      color: #007bff;
+      margin-bottom: 2px;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.6;
+    }
+    .section-title {
+      text-align: center;
+      margin: 50px 0;
+      font-size: 3.5rem; /* Increased size */
+      font-weight: bold; /* Bold text for heading */
+      color: #2c2c54; /* Darker font to contrast with pastel background */
+      opacity: 0;
+      animation: fadeIn 0.3s ease-in-out 0.3s forwards; /* Fade-in animation */
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+    @media (max-width: 768px) {
+      .main-content {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Top Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="/">Alisha Rath</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Me</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="/education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/work">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/awards">Honors & Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mentoring">Mentoring & Leadership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/chat">Chat with Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container main-content">
+    <h1 class="section-title">Educational Background</h1>
+    <hr>
+    <ul class="list-unstyled">
+      {% for edu in education %}
+          <li class="mt-4">
+              <h3>{{ edu[0] }}</h3>
+              <p>{{ edu[1] }}</p>
+              <p><em>{{ edu[2] }}</em></p>
+              {% if edu[3] %}
+                  <p>Grade: {{ edu[3] }}</p>
+              {% endif %}
+          </li>
+      {% endfor %}
+  </ul>
+    <!-- <ul class="list-unstyled">
+      <li>
+        <h3>San Jose State University, San Jose</h3>
+        <p>Master of Science - MS in Computer Science</p>
+        <p><em>2023 - 2025</em></p>
+        <p>Grade: 4</p>
+      </li>
+      <li class="mt-4">
+        <h3>Visvesvaraya National Institute Of Technology, Nagpur, India </h3>
+        <p>Bachelor of Technology - BTech in CSE</p>
+        <p><em>2013 - 2017</em></p>
+        <p>Grade: 9.37</p>
+      </li>
+      <li class="mt-4">
+        <h3>Vimla Convent School, Odisha, India</h3>
+        <p>High School</p>
+        <p><em>2000 - 2010</em></p>
+      </li>
+    </ul> -->
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alisha Rath - Home</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome CDN for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+  <style>
+    .main-content {
+      text-align: center;
+      color: white;
+    }
+    .img-container {
+      margin-bottom: 20px;
+    }
+    .text-container {
+      background: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent background to the text */
+      padding: 20px;
+      border-radius: 10px;
+      color: white;
+    }
+    .img-fluid {
+      width: 100%;
+      max-width: 600px; /* Adjust this value as needed */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <a class="navbar-brand" href="#">Alisha Rath</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about">About Me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/education">Education</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/research">Research</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/work">Work Experience</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/publications">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/awards">Honors & Awards</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/mentoring">Mentoring & Leadership</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/gallery">Gallery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/chat">Chat with Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/contact">Contact Me</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main Content -->
+  <div class="container main-content">
+    <div class="img-container">
+      <img src="static/img/Alisha.png" alt="Alisha Rath" class="img-fluid">
+    </div>
+    <div class="text-container">
+      <h1 class="fade-in-title">Alisha Rath</h1>
+      <h2 class="fade-in-subtitle">MSCS at SJSU</h2>
+      <p class="intro-text">Hello! I'm Alisha Rath, a software developer pursuing an MS in Computer Science. I specialize in backend development, cloud technologies, and AI.</p>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

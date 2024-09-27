@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - Alisha Rath</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7; /* Light background */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #0D47A1;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1565C0;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around content */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Header and Text Styling */
+        h1 {
+            font-size: 3rem; /* Increased size for main headings */
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .img-fluid {
+            margin-top: 20px;
+            border-radius: 50%; /* Keep the image rounded */
+            width: 150px; /* Set a fixed size */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+        }
+
+        /* Fade-in effect for the title */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 3.5rem; /* Increased size */
+            font-weight: bold; /* Bold text for heading */
+            color: #2c2c54; /* Darker font to contrast with pastel background */
+            opacity: 0;
+            animation: fadeIn 0.3s ease-in-out 0.3s forwards; /* 0.5s animation with a 0.5s delay */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 20px;
+            }
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Alisha Rath</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/research">Research</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/work">Work Experience</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awards">Honors & Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mentoring">Mentoring & Leadership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/chat">Chat with Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- <div class="container main-content">
+      <h1 class="section-title">Publications</h1>
+      <hr>
+        <div class="publication">
+          <h3>Scalable and explainable legal prediction </h3>
+          <a href="https://link.springer.com/article/10.1007/s10506-020-09273-1" target="_blank">Paper</a>
+          <p>
+            Legal decision-support systems have the potential to improve access to justice, administrative efficiency, and judicial consistency, but broad adoption of such systems is contingent on development of technologies with low knowledge-engineering, validation, and maintenance costs. This paper describes two approaches to an important form of legal decision support—explainable outcome prediction—that obviate both annotation of an entire decision corpus and manual processing of new cases. The first approach, which uses an attention network for prediction and attention weights to highlight salient case text, was shown to be capable of predicting decisions, but attention-weight-based text highlighting did not demonstrably improve human decision speed or accuracy in an evaluation with 61 human subjects. The second approach, termed semi-supervised case annotation for legal explanations, exploits structural and semantic regularities in case corpora to identify textual patterns that have both predictable relationships to case decisions and explanatory value.
+          </p>
+        </div>
+
+        <div class="publication">
+          <h3>AI-Driven Justice: Evaluating the Impact of Artificial Intelligence on Legal Systems</h3>
+          <a href="https://www.researchgate.net/publication/381926291_AI-Driven_Justice_Evaluating_the_Impact_of_Artificial_Intelligence_on_Legal_Systems" target="_blank">Paper</a>
+          <p>
+            This integrative literature review (ILR) examines the impact of artificial intelligence (AI) on legal systems, focusing on technologies such as natural language processing (NLP), machine learning (ML), and AI-driven decision support systems. The research problem addresses the need to understand how AI enhances efficiency, precision, and data handling in legal operations, transforming tasks like document analysis and decision-making procedures. The ILR aims to comprehensively understand AI integration in legal systems, considering its advantages and difficulties. It is guided by a conceptual framework based on AI, legal analytics, and decision support systems to enhance efficiency, accuracy, and innovation. Using a systematic methodology, the review integrates and examines existing research, evaluating AI's tangible benefits and ethical implications. The findings indicate that while AI can revolutionize legal systems, the study underscores the importance of continuous oversight, frequent evaluations, and developing AI models with the ability to identify and correct biases. Future research should prioritize longitudinal studies to assess AI's enduring effects, address ethical considerations, and encompass various legal and geographical contexts. Encouraging cross-disciplinary cooperation and utilizing diverse research methodologies is crucial to ensure that AI improves legal services while maintaining the integrity and impartiality of judicial procedures, and it makes the audience feel included and part of the AI revolution in legal systems.
+          </p>
+        </div>
+
+         <div class="publication">
+          <h3>Advances in Artificial Intelligence-Empowered Decision Support Systems</h3>
+          <a href="https://link.springer.com/book/10.1007/978-3-031-62316-5" target="_blank">Book</a>
+          <p>
+            Decision Support Systems (DSSs) are Software and Information Systems which make use of various data and business models, employ advanced data analytics procedures, and access extensive databases and data warehouses to facilitate with a decision process or with organizational issues. DSSs have proven to be particularly useful at the strategic level, while they usually require only limited computer-proficiency skills from their users. Although DSSs have been under development and use for several decades, recent advances in both Software Engineering technologies and Artificial Intelligence (AI) methodologies have heralded new avenues for research and development in this field.
+
+            This book exposes its readers to some of the most significant Advances in Artificial Intelligence-Empowered Decision Support Systems. It consists of an editorial note and an additional sixteen (16) chapters, all invited from authors who work on the corresponding chapter theme and are recognized for their significant research contributions. The chapters are organized into five parts, namely (i) AI-Empowered DSS in Medical Diagnosis and Biology, (ii) AI-Empowered DSS in Healthcare and Health Insurance, (iii) AI-Empowered DSS in Urban Matters, (iv) Various Applications of AI-Empowered DSS, and (v) Novel AI-Empowered Methodologies in Decision Making.
+            
+            Targeted toward academics, researchers, practitioners, and students in Computer Science, Artificial Intelligence, and Management, this book is also accessible to individuals from other disciplines interested in the cutting-edge developments of AI-empowered DSS technologies. An extensive list of bibliographic references at the end of each chapter guides the readers to probe deeper into the application areas of interest to them.
+            
+            
+          </p>
+        </div>
+
+      </div>
+    </main> -->
+    <div class="container main-content">
+      <h1 class="section-title">Publications</h1>
+      <hr>
+        {% for publication in publications %}
+            <div class="publication">
+                <h3>{{ publication[0] }}</h3>
+                <a href="{{ publication[1] }}" target="_blank">Read More</a>
+                <p>{{ publication[2] }}</p>
+            </div>
+        {% endfor %}
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-3">
+      <p>&copy; 2024 Alisha Rath. All rights reserved.</p>
+      <a href="https://github.com/yourgithub" class="fab fa-github"></a>
+      <a href="https://www.linkedin.com/in/yourlinkedin" class="fab fa-linkedin"></a>
+      <a href="mailto:your.email@example.com" class="fas fa-envelope"></a>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap

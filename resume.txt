@@ -1,0 +1,77 @@
+Alisha Rath
+California, United States | +16694556539 | alisha.rath@sjsu.edu | https://www.linkedin.com/in/alisha-rath-b6b306102/
+I'm Alisha Rath, pursuing an MS in Computer Science at San Jose State University. I'm dedicated to leveraging technology for innovative solutions.
+Fascinated by cloud computing and advanced software tools, I excel in creative problem-solving and collaborative team environments.San Jose State University
+
+Master of Science - MS in Computer Science
+
+Aug 2023 - May 2025
+
+Visvesvaraya National Institute Of Technology
+Bachelor of Technology - BTech in CSE
+
+2013 - 2017
+
+Grade: 9.37
+
+2003 - 2018
+Research Background
+Research Project, San Jose State University (Jan 2023 - Present)
+I am working an research project with Professor Chris Pollett to see the prediction of legal cases using supervised fine-tuning of LLMs. 
+Undergraduate Researcher, VNIT (Aug 2020 - May 2021)
+IP Spoofing Detection using Hop Count Filtering
+Implemented hop count-based filtering within the Linux network stack, effectively detecting and neutralizing spoofed IP packets during a reflector DDoS attack with precision
+Medical Utility App
+Developed an Android app to facilitate health information retrieval, provide first aid insights, offer medicinal drug descriptions, and dispense home remedy guidance
+
+Work Experience
+Amazon Web Services, East Palo Alto, California Software Engineering Intern
+Developed ECS/Fargate service with REST endpoints for streamlined S3 file retrieval.
+Implemented an automated deployment pipeline triggering S3 uploads upon successful builds.
+Optimized config change handling, reducing deployment time from 8 hours to 1 minute.
+Fidelity Investments, Bangalore, India Lead Software Engineer
+Led micro-services initiative, optimizing platform maintenance time by 40% and boosting batch processing efficiency by 50% for the Quantitative Portfolio Management team. Collaborated with team globally for success.
+Saved millions of dollars in ARR through targeted optimization of AWS resource usage like reducing EC2 size, S3 lifecycle management, etc
+Optimized a batch scheduling automation test suite, resulting in reduction of processing time from 5 hours to 15 minutes
+Led a 7-member team for developing a successful AWS API Gateway and Lambda project as an alternative to Outlook
+Designed and implemented a Portfolio management User Interface using Angular 13, optimizing the user experience and
+reducing portfolio creation time.
+Fidelity Investments, Bangalore, India
+Software Engineer Dec. 2017 – Dec. 2022
+Managed S3 bucket creation, lifecycle policies, and policy updates, boosting cloud storage and read-write by 23%
+Crafted a cache manager to streamline API calls, reducing data fetch time by 50 ms by eliminating redundant DB calls. ◦ Revolutionizedtheportfolioadvisoryproductson-boardingprocess,reducingthetimelinefrom2monthsto10minutes ◦ Led and executed the migration of 100% of on-premises microservices to AWS cloud, enhancing operational efficiency ◦ Automated a scheduler system, reducing enhancement efforts by 75% and slashing overall test time by 63%
+Fidelity Investments, Chennai, India
+Executive Graduate Trainee Jul. 2017 – Dec. 2017
+Led a time-sensitive project, implementing ledger-based transaction storage with Ethereum gas and blockchain for precision in transaction cost calculation.
+Collaboratedwithateamtocreatearesilientclientappwebsite,facilitatingseamlesstradingandorderviewingexperience.
+Arcesium, Hyderabad, India
+Software Engineering Intern Jun. 2016 – Aug. 2016
+Accelerated infrastructure deployment by 90% through crafting an efficient AWS CloudFormation template with Python’s Boto library.
+
+Publications
+AI Powered legal decision system
+Paper
+Supervised fine tuning LLM model to predict legal cases
+
+Medical Utility App
+Paper
+Homemade and other simple remedies provided using android app.
+
+Honors & Awards
+Awarded and lauded for executing cloud migration tasks with a 100% efficiency improvement at Fidelity
+Received On-Spot Awards for exceeding expectations in achieving 100% automation of the scheduler process for batch
+processing at Fidelity.
+Delivered a Kotlin Knowledge Transfer session at Fidelity for approximately 25 senior software developers, following
+attendance at GIDS Summit.
+Led and collaborated with a successful cricket team, securing victory in an intra-college event during freshman year.
+
+Mentoring & Leadership
+Mentoring Junios in Fidelity Investments
+Mentored junior developers and interns during my tenure at Fidelity.
+
+Tech Talks/Workshops
+Organized and delivered technical workshops and talks on machine learning, data preprocessing, and risk management systems for both internal teams and the broader tech community.
+
+Lead for Technical Projects
+Led the development and successful deployment of various software tools at Fidelity Investments, managing the entire lifecycle from planning to execution. Spearheaded a team of engineers to design and implement scalable solutions for risk assessment and credit scoring algorithms.
+

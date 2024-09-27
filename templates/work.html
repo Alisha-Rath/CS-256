@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work Experience - Alisha Rath</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='./css/styles.css') }}">
+    <style>
+        /* General Body Styling */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f7; /* Light background */
+        }
+
+        /* Navbar Styling */
+        .navbar {
+            background-color: #0D47A1;
+        }
+
+        .navbar-nav .nav-link {
+            color: white;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #1565C0;
+        }
+
+        /* Main Content Styling */
+        .main-content {
+            padding: 40px;
+            background: white;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow around content */
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        /* Header and Text Styling */
+        h1 {
+            font-size: 3rem; /* Increased size for main headings */
+            font-weight: bold;
+            color: #007bff;
+            margin-bottom: 2px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .img-fluid {
+            margin-top: 20px;
+            border-radius: 50%; /* Keep the image rounded */
+            width: 150px; /* Set a fixed size */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow to image */
+        }
+
+        /* Fade-in effect for the title */
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        .section-title {
+            text-align: center;
+            margin: 50px 0;
+            font-size: 3.5rem; /* Increased size */
+            font-weight: bold; /* Bold text for heading */
+            color: #2c2c54; /* Darker font to contrast with pastel background */
+            opacity: 0;
+            animation: fadeIn 0.3s ease-in-out 0.3s forwards; /* 0.5s animation with a 0.5s delay */
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .main-content {
+                padding: 20px;
+            }
+        }
+
+        /* Button Styling */
+        .btn {
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            padding: 10px 20px;
+            font-size: 1.1rem;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="/">Alisha Rath</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/research">Research</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/work">Work Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/publications">Publications</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/awards">Honors & Awards</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/mentoring">Mentoring & Leadership</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/gallery">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/chat">Chat with Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Me</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <!-- <div class="container main-content">
+        <h1 class="section-title">Work Experience</h1>
+        <hr>
+        <div class="work-entry mb-5">
+            <h3>Software Engineering Intern, Amazon Web Services (AWS), East Palo Alto <span class="text-muted">(May 2024 - Aug 2024)</span></h3>
+            <ul>
+                <li>Developed an ECS/Fargate service with REST endpoints for S3 file retrieval, reducing manual intervention.</li>
+                <li>Designed and implemented an automated deployment pipeline using AWS services like CodePipeline and CodeDeploy, improving deployment speed from 8 hours to 1 minute.</li>
+                <li>Optimized the handling of config changes, improving system efficiency and reducing downtime.</li>
+            </ul>
+        </div>
+
+        <div class="work-entry mb-5">
+            <h3>Lead Software engineer, Fidelity Investments, India <span class="text-muted">(Dec 2022 - Jun 2023)</span></h3>
+            <ul>
+                <li>Led the development of user interfaces and automated test suites, resulting in a 65% reduction in time to market.</li>
+                <li>Worked on Oracle database issues, leading SSN remediation projects and representing the team for cross-departmental initiatives.</li>
+                <li>Contributed to blockchain projects, specifically converting transfer agent transactions into blockchain ledger format for enhanced security.
+                </li>
+            </ul>
+        </div>
+        <div class="work-entry mb-5">
+            <h3>Software engineer, Fidelity Investments, India <span class="text-muted">(Dec 2017 - Dec 2022)</span></h3>
+            <ul>
+                <li>Developed a backend system that streamlined configuration picking for testing, reducing test prep time from 12 hours to instantaneous.</li>
+                <li>Upload of new products to the platform which took months can be done now in 10 minutes</li>
+                <li> REST API creation , junits (Mokito), automation suites (cucumber)</li>
+            </ul>
+        </div>
+    </div> -->
+    <!-- Main Content -->
+    <div class="container main-content">
+        <h1 class="section-title">Work Experience</h1>
+        <hr>
+        {% for experience in work_experience %}
+        <h3>{{ experience[0] }}, {{ experience[1] }}, {{ experience[2] }} <span class="text-muted">({{ experience[3] }} - {{ experience[4] }})</span></h3>
+        <ul>
+            {% set details = experience[5].split('. ') %}
+            {% for detail in details %}
+                {% if detail.strip() %}  <!-- Only display non-empty lines -->
+                    <li>{{ detail.strip() }}.</li>
+                {% endif %}
+            {% endfor %}
+        </ul>
+    {% endfor %}
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
