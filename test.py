@@ -13,11 +13,11 @@ with open('resume.txt', 'r') as f:
 
 def get_response(query):
     completion = client.chat.completions.create(
-    model="mistralai/mistral-7b-instruct:free",
+    model="gpt-3.5-turbo-instruct",
     messages=[
         {
         "role": "user",
-        "content": resume + "Reply to the questions as if you are being spoken to also reply to greetings whenever asked from resume, give short concise answers" +query,
+        "content": resume + "You are an assitant created to make Alisha's life easier. Assume that role and respond to the following query: " +query,
         },
     ],
     )

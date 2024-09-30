@@ -1,4 +1,4 @@
-## Install requirements
+## Install requirements (Use python 3.11)
 pip install -r /path/to/requirements.txt
 
 ## setup environment variables
